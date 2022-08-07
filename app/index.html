@@ -1,0 +1,335 @@
+---
+title: Main-admin
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+
+  <div class="d-flex align-items-center mb-12">
+    <h4 class="me-12 fw-bold text-dark ">Admin</h4>
+    <a href="" type="button" class="link-dark d-inline-block fw-bold text-dark " data-bs-toggle="modal" data-bs-target="#addModal"><span class="material-icons text-primary align-text-top me-2 ">add</span> Add New Admin</a>
+    <ul class="ms-auto d-flex fs-4 list-unstyled">
+      <li class="me-4"><a href="#" class="d-inline-block"><span class="material-icons">search</span></a></li>
+      <li><a href="#" class="d-inline-block"><span class="material-icons">notifications_active</span></a></li>
+    </ul>
+  </div>
+<table class="table text-dark mb-12">
+  <thead>
+    <tr>
+      <th scope="col">ID<span class="material-icons text-primary align-middle small ms-2">arrow_downward</span></th>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Verified</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">#1</th>
+      <td>Emir Wicks</td>
+      <td>emir.wicks@mail.com</td>
+      <td>Yes</td>
+      <td class="text-end">
+        <a href="" type="button" data-bs-toggle="modal" data-bs-target="#detailModal"><span class="material-icons fs-5">visibility</span></a>
+        <a href=""class="ms-6"  type="button" data-bs-toggle="modal" data-bs-target="#editModal"><span class="material-icons fs-5">edit</span></a>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">#2</th>
+      <td>Zaina Goldsmith</td>
+      <td>zaina.goldsmith@mail.com</td>
+      <td>Yes</td>
+      <td class="text-end">
+        <a href=""><span class="material-icons fs-5">visibility</span></a>
+        <a href=""class="ms-6" ><span class="material-icons fs-5">edit</span></a>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">#3</th>
+      <td>Mahima Lopez</td>
+      <td>mahima.lopez@mail.com</td>
+      <td>Yes</td>
+      <td class="text-end">
+        <a href=""><span class="material-icons fs-5">visibility</span></a>
+        <a href=""class="ms-6" ><span class="material-icons fs-5">edit</span></a>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">#4</th>
+      <td>Pharrell Murray</td>
+      <td>pharrell.murray@mail.com</td>
+      <td>Yes</td>
+      <td class="text-end">
+        <a href=""><span class="material-icons fs-5">visibility</span></a>
+        <a href=""class="ms-6" ><span class="material-icons fs-5">edit</span></a>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">#5</th>
+      <td>Annika Mcbride</td>
+      <td>annika.mcbride@mail.com</td>
+      <td>Yes</td>
+      <td class="text-end">
+        <a href=""><span class="material-icons fs-5">visibility</span></a>
+        <a href=""class="ms-6" ><span class="material-icons fs-5">edit</span></a>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">#6</th>
+      <td>Fatimah Clark</td>
+      <td>fatimah.clark@mail.com</td>
+      <td>Yes</td>
+      <td class="text-end">
+        <a href=""><span class="material-icons fs-5">visibility</span></a>
+        <a href=""class="ms-6" ><span class="material-icons fs-5">edit</span></a>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">#7</th>
+      <td>Klaudia Rhodes</td>
+      <td>klaudia.rhodes@mail.com</td>
+      <td>Yes</td>
+      <td class="text-end">
+        <a href=""><span class="material-icons fs-5">visibility</span></a>
+        <a href=""class="ms-6" ><span class="material-icons fs-5">edit</span></a>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">#8</th>
+      <td>Tillie Lucero</td>
+      <td>tillie.lucero@mail.com</td>
+      <td>Yes</td>
+      <td class="text-end">
+        <a href=""><span class="material-icons fs-5">visibility</span></a>
+        <a href=""class="ms-6" ><span class="material-icons fs-5">edit</span></a>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">#9</th>
+      <td>Sabrina Stephenson</td>
+      <td>sabrina.stephenson@mail.com</td>
+      <td>Yes</td>
+      <td class="text-end">
+        <a href=""><span class="material-icons fs-5">visibility</span></a>
+        <a href=""class="ms-6" ><span class="material-icons fs-5">edit</span></a>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">#10</th>
+      <td>Annie Smith</td>
+      <td>annie.smith@mail.com</td>
+      <td>Yes</td>
+      <td class="text-end">
+        <a href=""><span class="material-icons fs-5">visibility</span></a>
+        <a href=""class="ms-6" ><span class="material-icons fs-5">edit</span></a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="mt-3 d-flex justify-content-end">
+  <nav aria-label="Pagination ">
+    <ul class="pagination  ">
+      <li class="page-item">
+        <a class="page-link " href="#" aria-label="Previous">
+          <span aria-hidden="true">&lt;</span>
+        </a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Next">
+          <span aria-hidden="true">&gt;</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+
+<!-- detailModal -->
+<div class="modal fade" id="detailModal" tabindex="-1" aria-labelledby="detailModalLabel" aria-hidden="true">
+  <div class="modal-dialog ">
+    <div class="modal-content">
+      <div class="modal-body d-flex justify-content-between" >
+        <img class=" d-block object-cover w-141px h-141px me-4" src="./assets/images/emir.jpeg" alt="emir">
+        <div class=" flex-grow-1 ">
+          <ul class="d-flex justify-content-between mb-2 list-unstyled " >
+            <li><p class="mb-0" id="detailModalLabel">#1</p></li>
+            <li> <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></li>
+          </ul>
+          <p class="mb-0">Admin</p>
+          <p class="fw-bold fs-4 mb-0 ">Emir Wicks</p>
+          <small class="text-secondary lh-1 ">emir.wicks@mail.com</small>
+          <div class="accordion" id="deactiveEdit">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse" aria-expanded="true" aria-controls="collapse">
+                  <small class="lh-1 ps-2">Verified</small>
+                </button>
+              </h2>
+              <div id="collapse" class="accordion-collapse collapse show" aria-labelledby="heading" data-bs-parent="#accordionExample">
+                <div class="accordion-body d-flex justify-content-between pt-9">
+                  <button type="button" class="btn btn-outline-danger rounded-1px px-8 fw-bold">Deactivate</button>
+                  <button type="button" class="btn btn-primary rounded-1px px-8 fw-bold">Edit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<!-- EditModal -->
+<div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="editModalLabel">Edit Admin</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <form>
+        <h5 class="fw-bold mb-3">Account</h5>
+  <div class="mb-3">
+    <label for="name" class="form-label">Name</label>
+    <input type="text" class="form-control" id="name" aria-describedby="name" value="Emir Wicks">
+  </div>
+  <div class="mb-3">
+    <label for="email" class="form-label">Email</label>
+    <input type="email" class="form-control" id="email" value="emir.wicks@mail.com">
+  </div>
+  <div class="bg-gray-400 my-6" style="height:1px"></div>
+  <h5 class="fw-bold mb-3">Verification</h5>
+  <div class="d-flex justify-content-between mb-3">
+    <p class="fw-bold"><span class="material-icons text-primary me-2 fs-6 align-middle">check_circle</span>Verified</p>
+    <time class="block fs-7" datetime="2020-04-12">2020/4/12</time>
+  </div>
+  <button type="button" class="d-block w-100 btn btn-outline-gray-400 disabled text-center py-4">Send Verification Mail</button>
+ <div class="bg-gray-400 my-6" style="height:1px"></div>   
+        <h5 class="fw-bold mb-3">Access Level</h5>
+  <div class="accordion" id="accessLevel">
+  <div class="accordion-item border border-1 border-dark">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button p-4" type="button" data-bs-toggle="collapse" data-bs-target="#accessLevelOne" aria-expanded="true" aria-controls="collapseOne">
+        Admin
+      </button>
+    </h2>
+    <div id="accessLevelOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accessLevel">
+      <div class="accordion-body">
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="bg-gray-400 my-6" style="height:1px"></div>   
+    <h5 class="fw-bold mb-3">Custom Access</h5>
+    <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="Lecture">
+    <label class="form-check-label" for="Lecture">Lecture</label>
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="Coupon">
+    <label class="form-check-label" for="Coupon">Coupon</label>
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="Message">
+    <label class="form-check-label" for="Message">Message</label>
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="Setting">
+    <label class="form-check-label" for="Setting">Setting</label>
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="TaskMenu">
+    <label class="form-check-label" for="TaskMenu">Task Menu</label>
+  </div>
+    <div class="bg-gray-400 my-6" style="height:1px"></div>
+    <h5 class="fw-bold mb-3">Deactivate Account</h5>
+    <p class="text-danger mb-3"><span class="material-icons fs-6 me-2">warning</span>This cannot be undone!</p>
+  <button type="button" class="d-block w-100 btn btn-outline-danger text-center py-4">Deactivate This Account</button>
+
+</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-primary rounded px-8" data-bs-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary rounded px-8">  Update</button>
+      </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- AddModal -->
+<div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="addModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="addModalLabel">New Admin</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <form>
+        <h5 class="fw-bold mb-3">Account</h5>
+  <div class="mb-3">
+    <label for="name" class="form-label">Name</label>
+    <input type="text" class="form-control" id="name" aria-describedby="name" value="">
+  </div>
+  <div class="mb-3">
+    <label for="email" class="form-label">Email</label>
+    <input type="email" class="form-control" id="email" value="">
+  </div>
+  <div class="bg-gray-400 my-6" style="height:1px"></div>
+  <h5 class="fw-bold mb-3">Verification</h5>
+  <p class="fw-bold"><span class="material-icons text-danger align-middle me-2 fs-6">warning</span>Unverified</p>
+  <button type="button" class="d-block w-100 btn btn-outline-gray-400 text-primary text-center py-4">Send Verification Mail</button>
+ <div class="bg-gray-400 my-6" style="height:1px"></div>   
+        <h5 class="fw-bold mb-3">Access Level</h5>
+  <div class="accordion" id="accessLevel">
+  <div class="accordion-item border border-1 border-dark">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button p-4" type="button" data-bs-toggle="collapse" data-bs-target="#accessLevelOne" aria-expanded="true" aria-controls="collapseOne">
+        Admin
+      </button>
+    </h2>
+    <div id="accessLevelOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accessLevel">
+      <div class="accordion-body">
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="bg-gray-400 my-6" style="height:1px"></div>   
+    <h5 class="fw-bold mb-3">Custom Access</h5>
+    <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="Lecture">
+    <label class="form-check-label" for="Lecture">Lecture</label>
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="Coupon">
+    <label class="form-check-label" for="Coupon">Coupon</label>
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="Message">
+    <label class="form-check-label" for="Message">Message</label>
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="Setting">
+    <label class="form-check-label" for="Setting">Setting</label>
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="TaskMenu">
+    <label class="form-check-label" for="TaskMenu">Task Menu</label>
+  </div>
+
+</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-primary rounded px-8" data-bs-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary rounded px-8">  Update</button>
+      </div>
+      </form>
+    </div>
+  </div>
+</div>
