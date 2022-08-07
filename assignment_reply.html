@@ -1,9 +1,41 @@
----
-title: Main-assignment
-layout: ./app/layout.ejs
-engine: ejs
----
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Main-assignment-reply</title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"  rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+  <!-- sidebar -->
+<div class=" d-flex vw-100">
+  <section class="menu w-23 pt-10 pb-8  bg-light  d-flex flex-column ">
+    <img class="d-block ms-8 logo" src="./assets/images/logo-ANSWER.svg" alt="logo-ANSWER">
+    <ul class="mt-10 list-unstyled">
+      <li class="mb-7"><a href="#" class="fw-bold ps-8"><span class="material-icons align-middle me-4">assessment</span>DashBoard</a></li>
+      <li class="mb-7"><a href="#" class="fw-bold ps-8"><span class="material-icons align-middle me-4">question_answer</span>Question</a></li>
+      <li class="mb-7"><a href="./assignment.html" class="fw-bold ps-8"><span class="material-icons align-middle me-4">assignment</span>Assignment</a></li>
+      <li class="mb-7"><a href="#" class="fw-bold ps-8"><span class="material-icons align-middle me-4">video_library</span>Course</a></li>
+      <li class="mb-7"><a href="./index.html" class="fw-bold ps-8"><span class="material-icons align-middle me-4">person</span>Admin</a></li>
+      <li class="mb-7"><a href="#" class="fw-bold ps-8"><span class="material-icons align-middle me-4">settings</span>settings</a></li>
+    </ul>
+      <a href="#" class="ps-8 mt-auto d-block d-flex align-items-start">
+        <img class="object-cover w-40px h-40px rounded-circle" src="./assets/images/andychen.jpeg" alt="">
+        <ul class="ms-4 list-unstyled">
+          <li class="fw-bold mb-1">Andy Chen</li>
+          <li ><small class="text-secondary">andy0401@mail.com</small></li>
+        </ul>
+      </a>
+
+  </section>  
+  <section class="w-77 p-8  ">
+  
+    
   <div class="d-flex align-items-center mb-12">
     <h4 class="me-12 fw-bold text-dark ">Admin</h4>
     <div class="accordion " id="allCourse">
@@ -104,24 +136,35 @@ attach_file
         <div class="bg-gray-400 my-6" style="height:1px"></div>
         </div>
       </li>
-      <li class="p-4 pt-0 border-start border-end border-bottom border-gray-400 d-flex">
-        <img src="./assets/images/andychen.jpeg" alt="andychen" class="d-block flex-shrink-0 object-cover h-40px w-40px rounded-circle me-2">
-        <div>
-            <ul class="list-unstyled d-flex">
-              <li class="fw-bold">Andy Chen (You)</li>
-              <li class="ms-auto"><span class="material-icons">star_border</span></li>
-              <li class="ms-6"><span class="material-icons">edit</span></li>
-            </ul>
-          <p class="fs-8 text-secondary mb-3">13:24 AM (1 hours ago)</p>
-          <p class="fs-7 mb-3">Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q.<br><br><br> You can:<br><br> • adjust the  <span class="text-primary">vertical-align</span> of the image to position it elsewhere (e.g. the <span class="text-primary">middle</span> ) or <br> • change the <span class="text-primary">display</span> so it isn’t inline.</p>         
+      <li class=" border-start border-end border-bottom border-gray-400 ">
+        <ul class="list-unstyled bg-light d-flex py-4 px-6">
+          <li class="fw-bold me-6">Body Text<span class="material-icons ms-2">keyboard_arrow_down</span></li>
+          <li class="me-6"><span class="material-icons">format_bold</span></li>
+          <li class="me-6"><span class="material-icons">format_italic</span></li>
+          <li class="me-6"><span class="material-icons">format_list_bulleted</span></li>
+          <li class="me-6"><span class="material-icons">format_list_numbered</span></li>
+          <li class="me-6"><span class="material-icons">image</span></li>
+          <li class="me-6"><span class="material-icons">link</span></li>
+          <li class="me-6"><span class="material-icons">code</span></li>
+        </ul>
+        <div class="p-4 d-flex flex-column">
+          <p class="text-gray-400">Reply an answer…</p>
+          <div class=" d-flex justify-content-end align-items-center" style="margin-top:169px">
+            <button class="btn btn-outline-primary fw-bold py-2 px-8">Mark as read</button>
+            <button class="btn btn-primary fw-bold py-2 px-8 ms-4">Reply</button>
+          </div>
         </div>
       </li>
     </ul>
+  </div>
+  
+  </section>
 
-  </div>
-  <div class="d-flex justify-content-end mt-4 mb-8 align-items-center">
-    <a href="#" class="text-dark d-inline-block">&lt;</a>
-    <a href="./assignment_reply.html" class="text-dark d-inline-block ms-6">&gt;</a>
-    <button type="button"  class="btn btn-outline-primary fw-bold py-2 px-8" style="margin-left:280px">Mark as read</button>
-    <a type="button" href="./assignment_reply.html" class="btn btn-primary fw-bold py-2 px-8 ms-4 inline-block">Reply</a>
-  </div>
+</div>
+
+
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
