@@ -2,18 +2,17 @@
 //   // outline: 1px solid black;
 // }
 
-.wrap{
+.wrap {
   max-width: 1280px;
   margin: 0 auto;
   // max-height: 100vh;
 }
 
-
-.logo{
+.logo {
   height: 40px;
   width: 151px;
 }
 
-.menu a:active{
+.menu a:active {
   border-left: 4px solid $primary;
 }

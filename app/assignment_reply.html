@@ -4,124 +4,188 @@ layout: ./app/layout.ejs
 engine: ejs
 ---
 
-  <div class="d-flex align-items-center mb-12">
-    <h4 class="me-12 fw-bold text-dark ">Admin</h4>
-    <div class="accordion " id="allCourse">
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="allCourseOne">
-      <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#courseList" aria-expanded="true" aria-controls="allCourseOne">
-        All Courses
-      </button>
-    </h2>
-    <div id="courseList" class="accordion-collapse collapse show" aria-labelledby="allCourseOne" data-bs-parent="#allCourse">
-      <div class="accordion-body">
+<div class="d-flex align-items-center mb-12">
+  <h4 class="me-12 fw-bold text-dark">Admin</h4>
+  <div class="accordion" id="allCourse">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="allCourseOne">
+        <button
+          class="accordion-button fw-bold"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#courseList"
+          aria-expanded="true"
+          aria-controls="allCourseOne"
+        >
+          All Courses
+        </button>
+      </h2>
+      <div
+        id="courseList"
+        class="accordion-collapse collapse show"
+        aria-labelledby="allCourseOne"
+        data-bs-parent="#allCourse"
+      >
+        <div class="accordion-body"></div>
       </div>
     </div>
-    </div>
   </div>
-    <ul class="ms-auto d-flex fs-4 list-unstyled">
-      <li class="me-4"><a href="#" class="d-inline-block"><span class="material-icons">search</span></a></li>
-      <li><a href="#" class="d-inline-block"><span class="material-icons">notifications_active</span></a></li>
-    </ul>
-  </div>
+  <ul class="ms-auto d-flex fs-4 list-unstyled">
+    <li class="me-4">
+      <a href="#" class="d-inline-block"
+        ><span class="material-icons">search</span></a
+      >
+    </li>
+    <li>
+      <a href="#" class="d-inline-block"
+        ><span class="material-icons">notifications_active</span></a
+      >
+    </li>
+  </ul>
+</div>
 
-  <div class="d-flex align-items-center ">
-    <div class="accordion " id="all">
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="allOne">
-      <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#List" aria-expanded="true" aria-controls="allOne">
-        All (4)
-      </button>
-    </h2>
-    <div id="List" class="accordion-collapse collapse show" aria-labelledby="allCourseOne" data-bs-parent="#allCourse">
-      <div class="accordion-body">
+<div class="d-flex align-items-center">
+  <div class="accordion" id="all">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="allOne">
+        <button
+          class="accordion-button fw-bold"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#List"
+          aria-expanded="true"
+          aria-controls="allOne"
+        >
+          All (4)
+        </button>
+      </h2>
+      <div
+        id="List"
+        class="accordion-collapse collapse show"
+        aria-labelledby="allCourseOne"
+        data-bs-parent="#allCourse"
+      >
+        <div class="accordion-body"></div>
       </div>
     </div>
-    </div>
   </div>
-    <p class="fs-7 text-secondary ms-auto">2 comments</p>
-  </div>
-  <div class="d-flex ">
-    <ul class="list-unstyled me-4" style="width:320px">
-      <li class="p-3 bg-light border border-1 border-gray-400">
-        <ul class="mb-1 d-flex justify-content-between list-unstyled fs-8">
-          <li>Chapter Assignment 2</li>
-          <li>4 hrs ago</li>
-        </ul>
-        <ul class="d-flex justify-content-between list-unstyled">
-          <li class="fw-bold">Please check this file…</li>
-          <li class="fs-8 text-secondary">Emily Wang</li>
-        </ul>
-      </li>
-      <li class="p-3  border border-1 border-gray-400">
-        <ul class="mb-1 d-flex justify-content-between list-unstyled fs-8">
-          <li>Chapter Assignment 1</li>
-          <li>12 hrs ago</li>
-        </ul>
-        <ul class="d-flex justify-content-between list-unstyled">
-          <li class="fw-bold">My Homework</li>
-          <li class="fs-8 text-secondary">David Xu</li>
-        </ul>
-      </li>
-      <li class="p-3  border border-1 border-gray-400">
-        <ul class="mb-1 d-flex justify-content-between list-unstyled fs-8">
-          <li>Final Assignment</li>
-          <li>18 hrs ago</li>
-        </ul>
-        <ul class="d-flex justify-content-between list-unstyled">
-          <li class="fw-bold">Have a problem with this…</li>
-          <li class="fs-8 text-secondary">Tony Wei</li>
-        </ul>
-      </li>
-      <li class="p-3  border border-1 border-gray-400">
-        <ul class="mb-1 d-flex justify-content-between list-unstyled fs-8">
-          <li>Final Assignment</li>
-          <li>19 hrs ago</li>
-        </ul>
-        <ul class="d-flex justify-content-between list-unstyled">
-          <li class="fw-bold">Did I do it right?</li>
-          <li class="fs-8 text-secondary">Christina Lin</li>
-        </ul>
-      </li>
-    </ul>
-    <ul class="list-unstyled" style="width:584px ">
-      <li class="p-4 bg-light  border border-gray-400 d-flex justify-content-between ">
-        <ul class="mb-1 list-unstyled ">
-          <li class="fs-8">Chapter Assignment 2 / HTML&CSS</li>
-          <li class="fw-bold">Please check this file…</li>
-        </ul>
-        <p class="fw-bold fs-4 lh-1 align-center" style="writing-mode: vertical-rl; text-indent:10px">...</p>
-      </li>
-      <li class="p-4 border-start border-end border-gray-400 d-flex">
-        <img src="./assets/images/emilywang.jpeg" alt="emilywang" class="d-block flex-shrink-0 object-cover h-40px w-40px rounded-circle me-2">
-        <div>
-          <p class="fw-bold">Emily Wang</p>
-          <p class="fs-8 text-secondary mb-3">10:38 AM (4 hours ago)</p>
-          <p class="fs-7 mb-3">Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <span class="text-primary"> div</span> is bigger than the height of the <span class="text-primary">img</span> ? There is a gap below the image, but it doesn’t seems to be a padding/margin.<br>What is the gap or extra space below image?</p>
-          <button type="button" class="btn btn-outline-gray-400 text-dark bg-light fw-bold p-3"><span class="material-icons me-2 fs-5 align-middle">
-attach_file
-</span>HW-2-David.zip</button>
-        <div class="bg-gray-400 my-6" style="height:1px"></div>
+  <p class="fs-7 text-secondary ms-auto">2 comments</p>
+</div>
+<div class="d-flex">
+  <ul class="list-unstyled me-4" style="width: 320px">
+    <li class="p-3 bg-light border border-1 border-gray-400">
+      <ul class="mb-1 d-flex justify-content-between list-unstyled fs-8">
+        <li>Chapter Assignment 2</li>
+        <li>4 hrs ago</li>
+      </ul>
+      <ul class="d-flex justify-content-between list-unstyled">
+        <li class="fw-bold">Please check this file…</li>
+        <li class="fs-8 text-secondary">Emily Wang</li>
+      </ul>
+    </li>
+    <li class="p-3 border border-1 border-gray-400">
+      <ul class="mb-1 d-flex justify-content-between list-unstyled fs-8">
+        <li>Chapter Assignment 1</li>
+        <li>12 hrs ago</li>
+      </ul>
+      <ul class="d-flex justify-content-between list-unstyled">
+        <li class="fw-bold">My Homework</li>
+        <li class="fs-8 text-secondary">David Xu</li>
+      </ul>
+    </li>
+    <li class="p-3 border border-1 border-gray-400">
+      <ul class="mb-1 d-flex justify-content-between list-unstyled fs-8">
+        <li>Final Assignment</li>
+        <li>18 hrs ago</li>
+      </ul>
+      <ul class="d-flex justify-content-between list-unstyled">
+        <li class="fw-bold">Have a problem with this…</li>
+        <li class="fs-8 text-secondary">Tony Wei</li>
+      </ul>
+    </li>
+    <li class="p-3 border border-1 border-gray-400">
+      <ul class="mb-1 d-flex justify-content-between list-unstyled fs-8">
+        <li>Final Assignment</li>
+        <li>19 hrs ago</li>
+      </ul>
+      <ul class="d-flex justify-content-between list-unstyled">
+        <li class="fw-bold">Did I do it right?</li>
+        <li class="fs-8 text-secondary">Christina Lin</li>
+      </ul>
+    </li>
+  </ul>
+  <ul class="list-unstyled" style="width: 584px">
+    <li
+      class="p-4 bg-light border border-gray-400 d-flex justify-content-between"
+    >
+      <ul class="mb-1 list-unstyled">
+        <li class="fs-8">Chapter Assignment 2 / HTML&CSS</li>
+        <li class="fw-bold">Please check this file…</li>
+      </ul>
+      <p
+        class="fw-bold fs-4 lh-1 align-center"
+        style="writing-mode: vertical-rl; text-indent: 10px"
+      >
+        ...
+      </p>
+    </li>
+    <li class="p-4 border-start border-end border-gray-400 d-flex">
+      <img
+        src="./assets/images/emilywang.jpeg"
+        alt="emilywang"
+        class="d-block flex-shrink-0 object-cover h-40px w-40px rounded-circle me-2"
+      />
+      <div>
+        <p class="fw-bold">Emily Wang</p>
+        <p class="fs-8 text-secondary mb-3">10:38 AM (4 hours ago)</p>
+        <p class="fs-7 mb-3">
+          Hi Teacher, the attached file is my homework of chapter 2. And here
+          comes a question: Why in the following code the height of the
+          <span class="text-primary"> div</span> is bigger than the height of
+          the <span class="text-primary">img</span> ? There is a gap below the
+          image, but it doesn’t seems to be a padding/margin.<br />What is the
+          gap or extra space below image?
+        </p>
+        <button
+          type="button"
+          class="btn btn-outline-gray-400 text-dark bg-light fw-bold p-3"
+        >
+          <span class="material-icons me-2 fs-5 align-middle">
+            attach_file </span
+          >HW-2-David.zip
+        </button>
+        <div class="bg-gray-400 my-6" style="height: 1px"></div>
+      </div>
+    </li>
+    <li class="border-start border-end border-bottom border-gray-400">
+      <ul class="list-unstyled bg-light d-flex py-4 px-6">
+        <li class="fw-bold me-6">
+          Body Text<span class="material-icons ms-2">keyboard_arrow_down</span>
+        </li>
+        <li class="me-6"><span class="material-icons">format_bold</span></li>
+        <li class="me-6"><span class="material-icons">format_italic</span></li>
+        <li class="me-6">
+          <span class="material-icons">format_list_bulleted</span>
+        </li>
+        <li class="me-6">
+          <span class="material-icons">format_list_numbered</span>
+        </li>
+        <li class="me-6"><span class="material-icons">image</span></li>
+        <li class="me-6"><span class="material-icons">link</span></li>
+        <li class="me-6"><span class="material-icons">code</span></li>
+      </ul>
+      <div class="p-4 d-flex flex-column">
+        <p class="text-gray-400">Reply an answer…</p>
+        <div
+          class="d-flex justify-content-end align-items-center"
+          style="margin-top: 169px"
+        >
+          <button class="btn btn-outline-primary fw-bold py-2 px-8">
+            Mark as read
+          </button>
+          <button class="btn btn-primary fw-bold py-2 px-8 ms-4">Reply</button>
         </div>
-      </li>
-      <li class=" border-start border-end border-bottom border-gray-400 ">
-        <ul class="list-unstyled bg-light d-flex py-4 px-6">
-          <li class="fw-bold me-6">Body Text<span class="material-icons ms-2">keyboard_arrow_down</span></li>
-          <li class="me-6"><span class="material-icons">format_bold</span></li>
-          <li class="me-6"><span class="material-icons">format_italic</span></li>
-          <li class="me-6"><span class="material-icons">format_list_bulleted</span></li>
-          <li class="me-6"><span class="material-icons">format_list_numbered</span></li>
-          <li class="me-6"><span class="material-icons">image</span></li>
-          <li class="me-6"><span class="material-icons">link</span></li>
-          <li class="me-6"><span class="material-icons">code</span></li>
-        </ul>
-        <div class="p-4 d-flex flex-column">
-          <p class="text-gray-400">Reply an answer…</p>
-          <div class=" d-flex justify-content-end align-items-center" style="margin-top:169px">
-            <button class="btn btn-outline-primary fw-bold py-2 px-8">Mark as read</button>
-            <button class="btn btn-primary fw-bold py-2 px-8 ms-4">Reply</button>
-          </div>
-        </div>
-      </li>
-    </ul>
-  </div>
+      </div>
+    </li>
+  </ul>
+</div>

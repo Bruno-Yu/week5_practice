@@ -1,20 +1,15 @@
-@import '../../../node_modules/bootstrap/scss/functions';
-@import './variables';
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "./variables";
 
-@import '../../../node_modules/bootstrap/scss/maps';
-@import '../../../node_modules/bootstrap/scss/mixins';
-@import './utilities';
+@import "../../../node_modules/bootstrap/scss/maps";
+@import "../../../node_modules/bootstrap/scss/mixins";
+@import "./utilities";
 
-@import './colors';
+@import "./colors";
 
 // Layout&component
 // @import '../../../node_modules/bootstrap/scss/root';
 // @import './node_modules/bootstrap/scss/reboot';
-@import '../../../node_modules/bootstrap/scss/bootstrap';
+@import "../../../node_modules/bootstrap/scss/bootstrap";
 
-@import './layout';
-
-
-
-
-
+@import "./layout";
